@@ -15,12 +15,12 @@ public class triangoloEquilatero extends Application {
 	TextField tLato=new TextField();
 	 TextField tAltezza= new TextField();
 	 Label lRisultato=new Label();
-	 Label lNome=new Label("Anwar Belkheir, Alejandro Ordonez  Romero, Gabriele Menichetti, Daniele Morelli");
-	 Label lData=new Label("2023");
+	 Label lNome=new Label("Breccio morto");
+	 Label lData=new Label("2024");
 	public void start (Stage finestra) {
 		Button bArea=new Button("Calcolo area");
 		Button bPerimetro=new Button("Calcolo perimetro");
-		GridPane griglia=new GridPane();
+		GridPane salame=new GridPane();
 		
 		griglia.add(tLato, 0,1 );
 		griglia.add(tAltezza, 0, 2);
@@ -30,9 +30,9 @@ public class triangoloEquilatero extends Application {
 		griglia.add(lNome, 0, 6);
 		griglia.add(lData, 2, 7);
 
-		Scene scena=new Scene(griglia);
-		finestra.setTitle("Triangolo equilatero");
-		finestra.setScene(scena);
+		Scene prosciutto=new Scene(salame);
+		finestra.setTitle("Triangolo spastico (non l'avevo consideratoooo)");
+		finestra.setScene(prosciutto);
 		finestra.show();
 		
 		bArea.setOnAction(e->area());
@@ -55,7 +55,7 @@ public class triangoloEquilatero extends Application {
 		double lato= Integer.parseInt(tLato.getText());
 		double altezza= Integer.parseInt(tAltezza.getText());
 		
-		String risposta="";
+		String risposta=":-D";
 		
 		area= (lato*altezza)/2;
 		risposta=""+area;
